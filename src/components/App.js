@@ -1,7 +1,17 @@
+import React, {useState, useEffect} from "react";
+
 function App() {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:9000/message")
+    .then((res) => res.json())
+    .then((data) => setMessage(data.message));
+  }, []);
+
   return (
     <div>
-      <h1>Starting Project</h1>
+      <h1>{message}</h1>
     </div>
   );
 }
