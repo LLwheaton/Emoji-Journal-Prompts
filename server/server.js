@@ -18,14 +18,15 @@ const message = "Hello from server :)";
 
 app.get("/message", async (req, res) => {
     const response = await openai.createCompletion({
-        model: "text-davinci-001",
+        model: "text-davinci-003",
         prompt: "Give me a journal prompt related to the mood: sad",
         max_tokens: 50,
         temperature: 0,
       });
     // Displays the text response from above model and prompt
-    console.log(response.data.choices[0].text);
-    res.json({message: message});
+    const ai_response = response.data.choices[0].text;
+    //console.log(response.data.choices[0].text);
+    res.json({message: ai_response});
 });
 
 app.listen(9000, () => {

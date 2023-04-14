@@ -1,0 +1,15 @@
+div {
+    text-align: center;
+    padding-top: 75px;
+}
+
+body {
+    background-color: #FF4C68;
+}
+
+.heading {
+    font-size: 3rem;
+}
+.emoji {
+    font-size: 200%;
+}

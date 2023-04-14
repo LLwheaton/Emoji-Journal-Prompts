@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import Emoji from "./Emoji";
+import emojis from "../emojis.js";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -11,7 +13,17 @@ function App() {
 
   return (
     <div>
-      <h1>{message}</h1>
+      <script type="text/javascript" src="emojis.js"></script>
+      <h1 className="heading">How are you feeling today?</h1>
+      {emojis.map((emoji) => {
+        return (
+          <Emoji 
+            emoji={emoji.emoji}
+            label={emoji.label}
+          />
+        );
+      })}
+      <h3>{message}</h3>
     </div>
   );
 }
