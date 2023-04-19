@@ -1,9 +1,5 @@
 const emojis = [
     {
-        emoji: "😀",
-        label: "Grinning Face"
-    },
-    {
         emoji: "😃",
         label: "Smiling Face With Open Mouth"
     },
@@ -58,6 +54,10 @@ const emojis = [
     {
         emoji: "🤨",
         label: "Face With a Raised Eyebrow"
+    },
+    {
+        emoji: "😞",
+        label: "Disappointed Face"
     }
 ];
 

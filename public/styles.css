@@ -7,9 +7,22 @@ body {
     background-color: #FF4C68;
 }
 
+span {
+    display: inline-block;
+    width: 45px;
+    height: 60px;
+    padding-top: 10px;
+}
+
+
 .heading {
     font-size: 3rem;
 }
 .emoji {
     font-size: 200%;
+}
+
+.emoji:hover {
+    transform: scale(1.3);
+    padding-top: 10px;
 }

@@ -15,14 +15,12 @@ function App() {
     <div>
       <script type="text/javascript" src="emojis.js"></script>
       <h1 className="heading">How are you feeling today?</h1>
-      {emojis.map((emoji) => {
-        return (
+      {emojis.map(emoji => (
           <Emoji 
             emoji={emoji.emoji}
             label={emoji.label}
           />
-        );
-      })}
+        ))}
       <h3>{message}</h3>
     </div>
   );
